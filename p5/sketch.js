@@ -49,8 +49,8 @@ function draw() {
     //draw black ellipse on marker
     fill(0);
     ellipse(hPos.x, hPos.y, 50);
-    image(img1, 50, 50);
-    image(img2, 100, 100);
+    image(img1, hPos.x, hPos.y);
+    image(img2,hPos.x+50, hPos.y+50);
 
   
   }
