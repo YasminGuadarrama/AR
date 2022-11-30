@@ -24,8 +24,6 @@ var points = 0;
 // as mentioned, this is a hack, but I'm working on fixing it for the next version of the library!
 function preload() {
   loadImage('images/player.png');
-  img1 = loadImage('turtle.png');
-  img2 = loadImage('cat.png');
 }
 
 function setup() {
@@ -49,8 +47,8 @@ function draw() {
     //draw black ellipse on marker
     fill(0);
     ellipse(hPos.x, hPos.y, 50);
-    image(img1, hPos.x, hPos.y);
-    image(img2,hPos.x+50, hPos.y+50);
+    fill(50,70,70);
+    rect(hPos.x, hPos.y,50,50);
 
   
   }
